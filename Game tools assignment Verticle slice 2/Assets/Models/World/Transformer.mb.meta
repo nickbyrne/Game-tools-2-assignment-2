@@ -47,6 +47,23 @@ ModelImporter:
     100082: transform1
     100084: transform2
     100086: //RootNode
+    100088: group3
+    100090: group4
+    100092: group5
+    100094: group6
+    100096: group7
+    100098: pCube26
+    100100: pCube27
+    100102: pCylinder10
+    100104: pCylinder10 1
+    100106: pCylinder11
+    100108: pCylinder12
+    100110: pCylinder8
+    100112: pCylinder8 1
+    100114: pCylinder9
+    100116: pCylinder9 1
+    100118: transform3
+    100120: transform4
     400000: group1
     400002: group2
     400004: pCube1
@@ -91,7 +108,25 @@ ModelImporter:
     400082: transform1
     400084: transform2
     400086: //RootNode
+    400088: group3
+    400090: group4
+    400092: group5
+    400094: group6
+    400096: group7
+    400098: pCube26
+    400100: pCube27
+    400102: pCylinder10
+    400104: pCylinder10 1
+    400106: pCylinder11
+    400108: pCylinder12
+    400110: pCylinder8
+    400112: pCylinder8 1
+    400114: pCylinder9
+    400116: pCylinder9 1
+    400118: transform3
+    400120: transform4
     2100000: lambert2
+    2100002: lambert4
     2300000: pCube1
     2300002: pCube10
     2300004: pCube11
@@ -129,6 +164,15 @@ ModelImporter:
     2300068: pCylinder4
     2300070: pCylinder5
     2300072: pCylinder6
+    2300074: pCube27
+    2300076: pCylinder10
+    2300078: pCylinder10 1
+    2300080: pCylinder11
+    2300082: pCylinder12
+    2300084: pCylinder8
+    2300086: pCylinder8 1
+    2300088: pCylinder9
+    2300090: pCylinder9 1
     3300000: pCube1
     3300002: pCube10
     3300004: pCube11
@@ -166,6 +210,15 @@ ModelImporter:
     3300068: pCylinder4
     3300070: pCylinder5
     3300072: pCylinder6
+    3300074: pCube27
+    3300076: pCylinder10
+    3300078: pCylinder10 1
+    3300080: pCylinder11
+    3300082: pCylinder12
+    3300084: pCylinder8
+    3300086: pCylinder8 1
+    3300088: pCylinder9
+    3300090: pCylinder9 1
     4300000: pCube1
     4300002: pCube2
     4300004: pCube3
@@ -203,6 +256,15 @@ ModelImporter:
     4300068: pCylinder4
     4300070: pCylinder5
     4300072: pCylinder6
+    4300074: pCube27
+    4300076: pCylinder8
+    4300078: pCylinder9
+    4300080: pCylinder10
+    4300082: pCylinder8
+    4300084: pCylinder9
+    4300086: pCylinder10
+    4300088: pCylinder11
+    4300090: pCylinder12
   externalObjects: {}
   materials:
     importMaterials: 1
