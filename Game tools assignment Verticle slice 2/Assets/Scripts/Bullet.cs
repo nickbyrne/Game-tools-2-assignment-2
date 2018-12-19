@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour {
     private Rigidbody m_rigidbody;
     [SerializeField] float m_power;
 
-    private void OnCollisionEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Enemy")
         Destroy(gameObject);

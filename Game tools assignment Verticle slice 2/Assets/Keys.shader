@@ -1,8 +1,8 @@
-﻿Shader "Costumized/Keys" {
+﻿Shader "Customized/Keys" {
 	Properties
 
 	{
-		_Color("Main color", color) = (0,1,0,1)
+		_Color("Main color", color) = (1,0,1,0)
 		_Scale("Scale", Range(0,1)) = 0
 	}
 
@@ -23,13 +23,13 @@
 
 			struct appdata
 		{
-			float4 pos: SV_POSITION;
+			float4 pos: POSITION;
 			float3 normal : NORMAL;
 
 		};
 		struct v2f
 		{
-			float4 pos: SV_POSITION;
+			float4 pos: POSITION;
 			float3 normal : NORMAL;
 		};
 
@@ -49,7 +49,7 @@
 			return o;
 		}
 
-		fixed4 fragmentFunciton(v2f i) : SV_TARGET
+		fixed4 fragmentFunciton(v2f i) : TARGET
 		{
 			return fixed4(i.normal,1);
 		}

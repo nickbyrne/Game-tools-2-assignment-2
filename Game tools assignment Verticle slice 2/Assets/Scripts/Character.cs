@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 public class Character : MonoBehaviour {
 
+    
     private Animator m_animator;
     private bool m_picked;
     private bool m_aim;
@@ -17,22 +18,25 @@ public class Character : MonoBehaviour {
     private float m_weightIK;
     private Vector3 m_positionIK;
 
-    
+
+
+
     void Start()
     {
         // Initialize Animator
         m_animator = GetComponent<Animator>();
+
     }
 
-    public void Move(float turn, float forward, bool jump, bool picked, bool Dance, bool PowerUp)
+    public void Move(float turn, float forward, bool jump, bool Pick, bool Dance, bool PowerUp)
     {
         m_animator.SetFloat("Turn", turn);
         m_animator.SetFloat("Forward", forward);
 
-        m_picked = picked;
-        if (picked)
+        m_picked = Pick;
+        if (Pick)
         {
-            m_animator.SetTrigger("pick");
+            m_animator.SetTrigger("Pick");
         }
 
         if (jump)
@@ -56,8 +60,8 @@ public class Character : MonoBehaviour {
         {
             var pickable = other.GetComponent<Pickable>();
 
-            //Debug.Log("PickingTrigger");
-            //Debug.Log(pickable.picked);
+            Debug.Log("PickingTrigger");
+            Debug.Log(pickable.picked);
 
             if (m_picked && pickable != null && !pickable.picked)
             {
@@ -66,7 +70,7 @@ public class Character : MonoBehaviour {
                 pickable.BePicked(rightHand);
 
                 m_animator.SetTrigger("Pick");
-                StartCoroutine(UpdateIK(other));// Start corroutine to update position and weight
+                StartCoroutine(UpdateIK(other));
             }
         }
     }

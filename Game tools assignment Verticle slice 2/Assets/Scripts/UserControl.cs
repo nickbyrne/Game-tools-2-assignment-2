@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class UserControl : MonoBehaviour {
-
+    public ParticleSystem particles;
     private float m_turn;
     private float m_forward;
     private bool m_jump;
@@ -36,6 +36,16 @@ public class UserControl : MonoBehaviour {
         m_aimHold = Input.GetMouseButton(1);
         m_fire = Input.GetMouseButtonDown(0);
         m_PowerUp = Input.GetKeyDown(KeyCode.T);
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            particles.Play();
+        }
+
+        if (Input.GetKeyUp(KeyCode.T))
+        {
+            particles.Stop();
+        }
 
 
         m_character.Move(m_turn,m_forward, m_jump, m_pick, m_Dance,m_PowerUp);
