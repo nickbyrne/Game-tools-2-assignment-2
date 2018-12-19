@@ -1,4 +1,4 @@
-﻿Shader "Customized/Keys" {
+﻿Shader "Costumized/Keys" {
 	Properties
 
 	{
