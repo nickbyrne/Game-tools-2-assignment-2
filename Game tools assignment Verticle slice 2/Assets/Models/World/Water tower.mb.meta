@@ -214,6 +214,7 @@ ModelImporter:
     2000000: bottom1
     2100000: lambert1
     2100002: lambert2
+    2100004: lambert3
     2300000: pCone1
     2300002: pCylinder1
     2300004: pCylinder10
